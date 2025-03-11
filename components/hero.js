@@ -32,7 +32,6 @@ const Hero = () => {
           peers on Saturday, combined with self-guided lessons teaching you how
           to use AI to build apps.
         </p>
-        <Button variant="outline"> Join Vibe Camp </Button>
 
           {/* Small section with testimonials to be added later when we have actual users */}
         {/* <TestimonialsAvatars priority={true} /> */}
