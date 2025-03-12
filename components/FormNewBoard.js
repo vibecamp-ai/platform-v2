@@ -24,9 +24,9 @@ const FormNewBoard = () => {
 
 			toast.success("Board created!");
 
-			// router.refresh();
+			router.refresh();
 
-			// 2. Redirect to dedicated board page
+			
 		} catch (error) {
 			const errorMessage =
 				error.response?.data?.error ||
