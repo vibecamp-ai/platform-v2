@@ -5,7 +5,7 @@ import axios from "axios";
 import { toast } from "react-hot-toast";
 
 const ButtonVote = ({ postId, initialVotesCounter }) => {
-	const localStorageKeyName = `codefastSaaS-hasVoted-${postId}`;
+	const localStorageKeyName = `vibe-camp-hasVoted-${postId}`;
 
 	const [hasVoted, setHasVoted] = useState(false);
 	const [isLoading, setIsLoading] = useState(false);
