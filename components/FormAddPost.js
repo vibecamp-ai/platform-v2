@@ -56,7 +56,7 @@ const FormAddPost = ({ boardId }) => {
 				<input
 					required
 					type="text"
-					placeholder="Green buttons plz"
+					placeholder="Emoji button"
 					className="input input-bordered w-full"
 					value={title}
 					onChange={(event) => setTitle(event.target.value)}
@@ -72,7 +72,7 @@ const FormAddPost = ({ boardId }) => {
 					value={description}
 					onChange={(event) => setDescription(event.target.value)}
 					className="textarea textarea-bordered h-24"
-					placeholder="The login button color should be green to match our brand colors."
+					placeholder="A dedicated button to add emojis to the board 😛"
 					maxLength={1000}
 				></textarea>
 			</label>

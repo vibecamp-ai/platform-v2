@@ -9,6 +9,7 @@ const CardPost = ({ post }) => {
 					{post.description}
 				</div>
 			</div>
+			
 			<ButtonVote
 				postId={post._id.toString()}
 				initialVotesCounter={post.votesCounter}
