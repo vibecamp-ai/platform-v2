@@ -9,6 +9,7 @@ import ButtonDeleteBoard from "@/components/ButtonDeleteBoard";
 import CardPostAdmin from "@/components/CardPostAdmin";
 import ButtonLogout from "@/components/ButtonLogout";
 
+
 const getData = async (boardId) => {
 	const session = await auth();
 
@@ -25,13 +26,13 @@ const getData = async (boardId) => {
 
 	const posts = await Post.find({ boardId }).sort({ createdAt: -1 });
 
-	return { board, posts };
+	return { board, posts, session };
 };
 
 export default async function FeedbackBoard({ params }) {
 	const { boardId } = params;
 
-	const { board, posts } = await getData(boardId);
+	const { board, posts, session } = await getData(boardId);
 
 	return (
 		<main className="bg-base-200 min-h-screen">
