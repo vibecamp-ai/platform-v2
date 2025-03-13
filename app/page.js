@@ -111,16 +111,16 @@ export default async function Home() {
 					<ul className="max-w-lg mx-auto">
 						{[
 							{
-								question: "What do I get exactly?",
-								answer: "Loreum Ipseum",
+								question: "Is this useful for me?",
+								answer: "If you build products and want feedback, yes!",
 							},
 							{
 								question: "Can I get a refund?",
-								answer: "Loreum Ipseum",
+								answer: "Absolutely not!",
 							},
 							{
 								question: "I have another question",
-								answer: "Loreum Ipseum",
+								answer: "Email hi@vibecamp.ai to get in touch",
 							},
 						].map((qa) => (
 							<FAQListItem key={qa.question} qa={qa} />
