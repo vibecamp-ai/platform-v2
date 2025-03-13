@@ -7,6 +7,7 @@ import { auth } from "@/auth";
 import CardBoardLink from "@/components/CardBoardLink";
 import ButtonDeleteBoard from "@/components/ButtonDeleteBoard";
 import CardPostAdmin from "@/components/CardPostAdmin";
+import ButtonLogout from "@/components/ButtonLogout";
 
 const getData = async (boardId) => {
 	const session = await auth();
@@ -52,6 +53,7 @@ export default async function FeedbackBoard({ params }) {
 						</svg>
 						Back
 					</Link>
+					<ButtonLogout session={session} />
 				</div>
 			</section>
 

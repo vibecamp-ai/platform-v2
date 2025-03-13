@@ -3,6 +3,7 @@ import FAQListItem from "@/components/FAQListItem";
 import Image from "next/image";
 import vibecamp_hero from "@/public/assets/vibecamp_hero.jpg";
 import { auth } from "@/auth";
+import ButtonLogout from "@/components/ButtonLogout";
 
 export default async function Home() {
 	const session = await auth();
@@ -23,6 +24,7 @@ export default async function Home() {
 					</div>
 					<div>
 						<ButtonLogin session={session} />
+            <ButtonLogout session={session} />
 					</div>
 				</div>
 			</section>
